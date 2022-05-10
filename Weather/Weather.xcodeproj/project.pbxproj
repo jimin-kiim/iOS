@@ -16,6 +16,7 @@
 		4D33594D282A6E9E00B5A1CC /* HourlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D33594B282A6E9E00B5A1CC /* HourlyCollectionViewCell.swift */; };
 		4D33594E282A6E9E00B5A1CC /* HourlyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D33594C282A6E9E00B5A1CC /* HourlyCollectionViewCell.xib */; };
 		4D335950282A6F4900B5A1CC /* HourlyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D33594F282A6F4900B5A1CC /* HourlyDataModel.swift */; };
+		4DBCAEA7282A94E9004E206B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBCAEA6282A94E9004E206B /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4D33594B282A6E9E00B5A1CC /* HourlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D33594C282A6E9E00B5A1CC /* HourlyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyCollectionViewCell.xib; sourceTree = "<group>"; };
 		4D33594F282A6F4900B5A1CC /* HourlyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyDataModel.swift; sourceTree = "<group>"; };
+		4DBCAEA6282A94E9004E206B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		4D335936282A65AF00B5A1CC /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				4D335957282A8A6D00B5A1CC /* READMEs */,
 				4D335951282A84F400B5A1CC /* Resources */,
 				4D335952282A851600B5A1CC /* Sources */,
 			);
@@ -71,6 +74,7 @@
 		4D335951282A84F400B5A1CC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4DBCAEA5282A94D3004E206B /* Extensions */,
 				4D335945282A65B500B5A1CC /* Info.plist */,
 				4D335940282A65B500B5A1CC /* Assets.xcassets */,
 				4D335937282A65AF00B5A1CC /* AppDelegate.swift */,
@@ -114,6 +118,21 @@
 				4D33593D282A65AF00B5A1CC /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4D335957282A8A6D00B5A1CC /* READMEs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = READMEs;
+			sourceTree = "<group>";
+		};
+		4DBCAEA5282A94D3004E206B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4DBCAEA6282A94E9004E206B /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +211,7 @@
 				4D335950282A6F4900B5A1CC /* HourlyDataModel.swift in Sources */,
 				4D335938282A65AF00B5A1CC /* AppDelegate.swift in Sources */,
 				4D33593A282A65AF00B5A1CC /* SceneDelegate.swift in Sources */,
+				4DBCAEA7282A94E9004E206B /* UIView.swift in Sources */,
 				4D33594D282A6E9E00B5A1CC /* HourlyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

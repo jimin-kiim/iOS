@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dailyHighestTempLabel: UILabel!
     @IBOutlet weak var dailyLowestTempLabel: UILabel!
     
+    @IBOutlet weak var hourlyView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +35,8 @@ extension ViewController : UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     let width = UIScreen.main.bounds.width
     
-    let cellWidth = width * (60/375)
-    let cellHeight = cellWidth * (80/60)
+    let cellWidth = width * (55/375)
+    let cellHeight = cellWidth * (80/55)
     
     return CGSize(width: cellWidth, height: cellHeight)
   }

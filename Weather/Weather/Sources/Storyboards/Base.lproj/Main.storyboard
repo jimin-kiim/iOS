@@ -92,10 +92,32 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="865"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQB-Ys-Uhe" userLabel="Hourly View">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                                <rect key="frame" x="15" y="0.0" width="384" height="150"/>
                                                 <subviews>
+                                                    <visualEffectView opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6n-Hs-ys6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="150"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nl6-WB-UNs">
+                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="150"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpB-GF-ZIS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="22"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JYz-LN-zGC">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="22"/>
+                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    </view>
+                                                                    <vibrancyEffect>
+                                                                        <blurEffect style="regular"/>
+                                                                    </vibrancyEffect>
+                                                                </visualEffectView>
+                                                            </subviews>
+                                                        </view>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <blurEffect style="systemUltraThinMaterialDark"/>
+                                                    </visualEffectView>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lqn-sh-JGO">
-                                                        <rect key="frame" x="0.0" y="46" width="414" height="100"/>
+                                                        <rect key="frame" x="0.0" y="46" width="384" height="100"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="P7N-pV-VVo"/>
@@ -118,25 +140,29 @@
                                                         </cells>
                                                     </collectionView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partly cloudy conditions expected around 7PM." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4Q-4Y-tSJ">
-                                                        <rect key="frame" x="15" y="15" width="399" height="16"/>
+                                                        <rect key="frame" x="15" y="15" width="369" height="16"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="0.37014103570000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="N6n-Hs-ys6" secondAttribute="trailing" id="4G8-4g-Nfg"/>
                                                     <constraint firstItem="S4Q-4Y-tSJ" firstAttribute="leading" secondItem="aQB-Ys-Uhe" secondAttribute="leading" constant="15" id="6ry-7S-Cw5"/>
                                                     <constraint firstItem="S4Q-4Y-tSJ" firstAttribute="top" secondItem="aQB-Ys-Uhe" secondAttribute="top" constant="15" id="NUN-sU-4cK"/>
                                                     <constraint firstItem="lqn-sh-JGO" firstAttribute="top" secondItem="S4Q-4Y-tSJ" secondAttribute="bottom" constant="15" id="OsM-Nc-Ccx"/>
                                                     <constraint firstAttribute="trailing" secondItem="lqn-sh-JGO" secondAttribute="trailing" id="b2g-kV-LTD"/>
+                                                    <constraint firstItem="N6n-Hs-ys6" firstAttribute="top" secondItem="aQB-Ys-Uhe" secondAttribute="top" id="hUC-BS-OyH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="N6n-Hs-ys6" secondAttribute="bottom" id="raG-8g-p7e"/>
+                                                    <constraint firstItem="N6n-Hs-ys6" firstAttribute="leading" secondItem="aQB-Ys-Uhe" secondAttribute="leading" id="tbK-tc-GZ1"/>
                                                     <constraint firstAttribute="trailing" secondItem="S4Q-4Y-tSJ" secondAttribute="trailing" id="wAE-vf-vda"/>
                                                     <constraint firstItem="lqn-sh-JGO" firstAttribute="leading" secondItem="aQB-Ys-Uhe" secondAttribute="leading" id="we6-EK-ouG"/>
                                                     <constraint firstAttribute="height" constant="150" id="xPR-vC-ykz"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57f-FP-wtI" userLabel="10-day View">
-                                                <rect key="frame" x="8" y="165" width="414" height="700"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57f-FP-wtI" userLabel="10-day View">
+                                                <rect key="frame" x="15" y="165" width="384" height="700"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="0.3701410356736341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="700" id="PxC-Rt-MMh"/>
@@ -144,13 +170,13 @@
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="aQB-Ys-Uhe" firstAttribute="leading" secondItem="wGU-mc-1ma" secondAttribute="leading" id="87C-EZ-uKt"/>
+                                            <constraint firstItem="aQB-Ys-Uhe" firstAttribute="leading" secondItem="wGU-mc-1ma" secondAttribute="leading" constant="15" id="87C-EZ-uKt"/>
                                             <constraint firstItem="57f-FP-wtI" firstAttribute="top" secondItem="aQB-Ys-Uhe" secondAttribute="bottom" constant="15" id="99t-pI-6Km"/>
-                                            <constraint firstAttribute="trailing" secondItem="57f-FP-wtI" secondAttribute="trailing" id="9f1-SF-D7g"/>
+                                            <constraint firstAttribute="trailing" secondItem="57f-FP-wtI" secondAttribute="trailing" constant="15" id="9f1-SF-D7g"/>
                                             <constraint firstItem="aQB-Ys-Uhe" firstAttribute="top" secondItem="wGU-mc-1ma" secondAttribute="top" id="Pnc-ns-7CF"/>
                                             <constraint firstAttribute="bottom" secondItem="57f-FP-wtI" secondAttribute="bottom" id="mmW-Qu-W3C"/>
-                                            <constraint firstAttribute="trailing" secondItem="aQB-Ys-Uhe" secondAttribute="trailing" id="oC0-w6-zF0"/>
-                                            <constraint firstItem="57f-FP-wtI" firstAttribute="leading" secondItem="wGU-mc-1ma" secondAttribute="leading" id="ynX-5t-WiU"/>
+                                            <constraint firstAttribute="trailing" secondItem="aQB-Ys-Uhe" secondAttribute="trailing" constant="15" id="oC0-w6-zF0"/>
+                                            <constraint firstItem="57f-FP-wtI" firstAttribute="leading" secondItem="wGU-mc-1ma" secondAttribute="leading" constant="15" id="ynX-5t-WiU"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -186,6 +212,7 @@
                         <outlet property="dailyHighestTempLabel" destination="y0T-WA-sKz" id="2Bf-E0-SF0"/>
                         <outlet property="dailyLowestTempLabel" destination="j3J-NP-Lu3" id="8l4-1h-vlm"/>
                         <outlet property="hourlyCollectionView" destination="lqn-sh-JGO" id="n4e-z8-onT"/>
+                        <outlet property="hourlyView" destination="aQB-Ys-Uhe" id="YEN-du-E3r"/>
                         <outlet property="loacationLabel" destination="HJg-Ah-2EU" id="kGb-WJ-boI"/>
                         <outlet property="summaryLabel" destination="rRd-ra-RMx" id="O0M-O6-eRA"/>
                     </connections>
